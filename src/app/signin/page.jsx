@@ -22,7 +22,14 @@ export default function Signup() {
             <div class="remb flex">
               <h3 class="pt-7 font-semibold text-xl">Remember me</h3>
               {/* <Link href='/'> <h3>Forgot Password?</h3></Link> */}
+
+              
             </div>
+            <Link href="./fpage">
+            <button class=" bg-black text-white py-2 mt-5 px-4 ml-32 rounded hover:shadow-md opacity-100  hover:bg-gray-600 hover:border-solid hover:border-black ">
+              Sign-in
+            </button>
+          </Link>
           </div>
         </div>
       </div>

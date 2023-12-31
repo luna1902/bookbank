@@ -5,7 +5,9 @@ export default function Navbar() {
   return (
     <main>
       <div class=" flex justify-evenly pt-5 bg-opacity-15 ">
-        <Link href="/"><h1 class=" font-serif font-semibold text-7xl">BookBank</h1></Link>
+        <Link href="/">
+          <h1 class=" font-serif font-semibold text-7xl">BookBank</h1>
+        </Link>
         <div class=" flex items-center pl-96">
           <ul class=" flex  items-center space-x-6  text-white text-xl">
             <li>
