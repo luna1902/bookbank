@@ -4,20 +4,20 @@ import Image from "next/image";
 export default function Navbar() {
   return (
     <main>
-      <div class=" flex justify-evenly pt-5 bg-opacity-15 ">
-        <Link href="/">
-          <h1 class=" font-serif font-semibold text-7xl">BookBank</h1>
+      <div class=" flex justify-evenly pt-5 ">
+        <Link href="/" >
+          <h1 class=" font-serif font-semibold text-7xl">Kitabghr</h1>
         </Link>
         <div class=" flex items-center pl-96">
-          <ul class=" flex  items-center space-x-6  text-white text-xl">
-            <li>
-              <Link href="/">Subscribe</Link>
+          <ul class=" flex  items-center space-x-6 text-zinc-100 text-xl">
+            <li className=" hover:bg-black hover:text-white">
+              <Link href="/" >Subscribe</Link>
             </li>
             <li>
-              <Link href="/">Search</Link>
+              <Link href="/" className=" hover:bg-black hover:text-white">Search</Link>
             </li>
-            <li>
-              <Link href="./signin/">Sign</Link>
+            <li className=" hover:bg-black hover:text-white">
+              <Link href="./signin/">Sign-in</Link>
             </li>
           </ul>
           <Link href="./fpage">
