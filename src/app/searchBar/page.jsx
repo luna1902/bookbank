@@ -25,15 +25,34 @@ export default function Search() {
 
     return (
         <div> 
+           
+            <div className=" flex justify-center mt-52">
             <input
                 type="text"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                placeholder="Enter your search query"
-                
+                placeholder="Looking for?..."
+                className=" border-4 h-14 p-2 w-1/3 border-slate-950 rounded-lg text-black"
             />
-            <button type='submit' onClick={handleSearch}><FaSearch /></button>
-            <ul>
+            <button type='submit' className=" flex flex-col text-black" onClick={handleSearch}><FaSearch /></button>
+            {/* <ul>
+                {results.map((result, index) =>
+                    <li key={index}>
+                    
+                         <div>
+                            <strong>Title:</strong> {result.title ? result.title : "N/A"}
+                        </div>
+                        <div>
+                            <strong>Author(s):</strong> {result.author_name ? result.author_name.join(", ") : "N/A"}
+                        </div>
+                    </li>
+                )}
+            </ul> */}
+            </div>
+           
+
+            
+            <ul >
                 {results.map((result, index) =>
                     <li key={index}>
                     
@@ -46,6 +65,7 @@ export default function Search() {
                     </li>
                 )}
             </ul>
+            
         </div>
     );
 }
