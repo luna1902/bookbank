@@ -6,10 +6,19 @@ import { useEffect, useState } from "react";
 import { FaHandshake } from "react-icons/fa6";
 import { FaUser } from "react-icons/fa";
 
+function Cards()
+{
+  <div className="cards justify-around flex">
+  <div className=" card bg-slate-300 mt-10   rounded-sm h-24 w-60 text-justify p-3 border-4">
+    data
+  </div>
+
+  
+ </div>
+}
+
+
  export default async function Dash() {
-   
-
-
   return (
     <div
       className="  flex  bg-cover bg-opacity-95 bg-scroll bg-no-repeat "
@@ -50,38 +59,20 @@ import { FaUser } from "react-icons/fa";
               pages can make you smile ;Black-white and boring you call them all
               the time but I find solace whenever I turn these magical pages of
               mine!
+              
             </p>
-            
+             
+             <br/>
+             <p className="  text-slate-600">
+               Shambhavi Rai
+             </p>
+
           </div>   
            
           <nav className=" container">
 
-           <div className=" flex">
-           <h2 className=" text-5xl mt-14 font-medium ">Librarian's Recommendatins <FaHandshake /></h2>
-           
-          </div>
-          <div className="cards justify-around flex">
-            <div className=" card bg-slate-300 mt-10  rounded-sm h-24 w-60 text-justify p-3 border-4">
-              
-            </div>
-
-            <div className=" card bg-slate-300 mt-10 ml-12 rounded-sm h-24 w-60 border-4 ">
-              kkki
-            </div>
-
-           
-          </div>  
-
-           <div className="cards justify-around flex">
-            <div className=" card bg-slate-300 mt-10   rounded-sm h-24 w-60 text-justify p-3 border-4">
-              
-            </div>
-
-            <div className=" card bg-slate-300 mt-10 ml-12 rounded-sm h-24 w-60 border-4 ">
-              kkki
-            </div>
-           </div>
-
+          
+<Cards/>
            
           </nav>
            

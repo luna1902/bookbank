@@ -1,3 +1,4 @@
+//shared ui for a segment and its children is represented through this layout.tsx
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Navbar from './navbar/page'
