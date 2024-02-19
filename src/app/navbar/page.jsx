@@ -51,6 +51,8 @@ export default function Navbar() {
         </div>
       </div>
       <div class="border-b border-solid border-black w-screen"></div>
+
+      <div>Search</div>
     </main>
   );
 }
