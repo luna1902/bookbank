@@ -1,16 +1,18 @@
 "use client"
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import Signup from "../signin/page";
 import { useEffect, useState } from "react";
 import { FaHandshake } from "react-icons/fa6";
 import { FaUser } from "react-icons/fa";
-
-function Cards()
+import Books from "./data/page";
+function Cards(props)
 {
   <div className="cards justify-around flex">
   <div className=" card bg-slate-300 mt-10   rounded-sm h-24 w-60 text-justify p-3 border-4">
-    data
+  <img alt="book-cover" src={props.img}/>
+  
   </div>
 
   
@@ -19,6 +21,7 @@ function Cards()
 
 
  export default async function Dash() {
+     
   return (
     <div
       className="  flex  bg-cover bg-opacity-95 bg-scroll bg-no-repeat "
@@ -35,8 +38,8 @@ function Cards()
         </Link >
 
         <div className=" bg-slate-300 hover:bg-slate-50 justify-items-center justify-center align-middle border-white rounded-full mr-7 mt-4 ">
-        <Link href='/signin' className=" mt-4   ml-7 p-7 ">
-         <FaUser />
+        <Link href='/signin' className="">
+         <FaUser  className=" size-9"/>
          </Link>
         </div>
         </div>
@@ -72,10 +75,10 @@ function Cards()
           <nav className=" container">
 
           
-<Cards/>
+      
+           
            
           </nav>
-           
           </div>    
 
           

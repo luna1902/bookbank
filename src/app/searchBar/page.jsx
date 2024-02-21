@@ -1,46 +1,4 @@
 'use client'
-// import React from "react";
-// import{UseNavigate} from 'react-router-dom'
-// import { useState } from "react";
-// import { FaMagnifyingGlass } from "react-icons/fa6";
-
-// function Box()
-// {
-//     return(
-//         <div className=" flex justify-center mr-6 ">
-             
-//            <ul className=" bg-slate-100 h-60 w-96 overflow-auto border-3 border-slate-800" >
-//                 {results.map((result, index) =>
-//                     <div key={index}>
-                    
-//                          <div>
-//                             <strong>Title:</strong> {result.title ? result.title : "N/A"}
-//                         </div>
-//                         <div>
-//                             <strong>Author(s):</strong> {result.author_name ? result.author_name.join(", ") : "N/A"}
-//                         </div>
-//                         <div>
-//                             <strong>Contributor(s):</strong> {result.contributor ? result.contributor : "N/A"}
-//                         </div>
-//                         <div>
-//                             <strong>Ebook Access</strong> {result.ebook_access ?result.ebook_access: "N/A"}
-//                         </div>
-                        
-//                         <div>
-//                             <strong>Currently Reading Count</strong> {result.currently_reading_count ? result.currently_reading_count: "N/A"}
-//                         </div>
-//                         <div>
-//                             <strong>Already Read Count</strong> {result.already_read_count? result.already_read_count : "N/A"}
-//                         </div>
-//                         <div class="border-b border-solid border-black "></div>
-//                     </div>
-//                 )}
-//             </ul>
-            
-//            </div>
-//     )
-// }
-
 
 import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
@@ -79,7 +37,7 @@ export default function Search() {
 
            <div className=" flex justify-center mr-6 ">
              
-           <ul className=" bg-slate-100 h-60 w-96 overflow-auto border-3 border-slate-800" >
+           <ul className=" bg-slate-100 h-60 w-96 overflow-auto border-3 border-slate-800 rounded-md mt-3" >
                 {results.map((result, index) =>
                     <div key={index}>
                     
