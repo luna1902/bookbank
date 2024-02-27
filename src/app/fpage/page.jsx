@@ -1,51 +1,35 @@
-"use client"
+
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Signup from "../signin/page";
-import { useEffect, useState } from "react";
 import { FaHandshake } from "react-icons/fa6";
 import { FaUser } from "react-icons/fa";
 import Books from "./data/page";
-function Cards(props)
-{
-  <div className="cards justify-around flex">
-  <div className=" card bg-slate-300 mt-10   rounded-sm h-24 w-60 text-justify p-3 border-4">
-  <img alt="book-cover" src={props.img}/>
-  
-  </div>
 
-  
- </div>
-}
-
-
- export default async function Dash() {
-     
+export default async function Dash() {
   return (
     <div
       className="  flex  bg-cover bg-opacity-95 bg-scroll bg-no-repeat "
       style={{ backgroundImage: "url('/dashn.jpg')" }}
     >
-
-
-      <nav >
+      <nav>
         <div className=" flex justify-between">
-        <Link href="/">
-          <h1 class=" font-serif font-semibold text-4xl mt-3 text-black">
-            Kitabghr
-          </h1>
-        </Link >
+          <Link href="/">
+            <h1 class=" font-serif font-semibold text-4xl mt-3 text-black">
+              Kitabghr
+            </h1>
+          </Link>
 
-        <div className=" bg-slate-300 hover:bg-slate-50 justify-items-center justify-center align-middle border-white rounded-full mr-7 mt-4 ">
-        <Link href='/signin' className="">
-         <FaUser  className=" size-9"/>
-         </Link>
-        </div>
+          <div className=" bg-slate-300 hover:bg-slate-50 justify-items-center justify-center align-middle border-white rounded-full mr-7 mt-4 ">
+            <Link href="/signin" className="">
+              <FaUser className=" size-9" />
+            </Link>
+          </div>
         </div>
 
         <div className=" flex mr-24 w-fit mb-9">
-          <div className="Head mt-10 ml-24 h-fit bg-slate-300 mr-20 rounded-xl p-5  text-wrap text border-4">
+          <div className="Head ml-48 mt-10  justify-center h-fit bg-opacity-80 bg-blend-saturation mr-20 rounded-xl p-5  text-wrap text border-4">
             <h3 className=" text-4xl font-medium">
               Find your lost self or rather get lost?!
             </h3>
@@ -62,31 +46,16 @@ function Cards(props)
               pages can make you smile ;Black-white and boring you call them all
               the time but I find solace whenever I turn these magical pages of
               mine!
-              
             </p>
-             
-             <br/>
-             <p className="  text-slate-600">
-               Shambhavi Rai
-             </p>
 
-          </div>   
-           
-          <nav className=" container">
+            <br />
+            {/* <p className="  text-slate-600">Shambhavi Rai</p> */}
+          </div>
+        </div>
 
-          
-      
-           
-           
-          </nav>
-          </div>    
-
-          
-          
-      
-
-        
-
+        <div className=" container">
+          <Books/>
+        </div>
       </nav>
     </div>
   );
