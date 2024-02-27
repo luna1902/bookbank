@@ -11,7 +11,7 @@ export default async function Dash() {
   return (
     <div
       className="  flex  bg-cover bg-opacity-95 bg-scroll bg-no-repeat "
-      style={{ backgroundImage: "url('/dashn.jpg')" }}
+      style={{ backgroundImage: "url('/crumble.jpg')" }}
     >
       <nav>
         <div className=" flex justify-between">
@@ -21,7 +21,7 @@ export default async function Dash() {
             </h1>
           </Link>
 
-          <div className=" bg-slate-300 hover:bg-slate-50 justify-items-center justify-center align-middle border-white rounded-full mr-7 mt-4 ">
+          <div className=" bg-slate-300 hover:bg-slate-50 justify-items-center justify-center align-middle rounded-full mr-7 mt-4 ">
             <Link href="/signin" className="">
               <FaUser className=" size-9" />
             </Link>
@@ -29,7 +29,7 @@ export default async function Dash() {
         </div>
 
         <div className=" flex mr-24 w-fit mb-9">
-          <div className="Head ml-48 mt-10  justify-center h-fit bg-opacity-80 bg-blend-saturation mr-20 rounded-xl p-5  text-wrap text border-4">
+          <div className="Head ml-48 mt-10  justify-center h-fit  bg-blend-saturation  bg-slate-300 bg-opacity-30 mr-20 rounded-xl p-5  text-wrap text shadow-xl shadow-black">
             <h3 className=" text-4xl font-medium">
               Find your lost self or rather get lost?!
             </h3>
@@ -49,11 +49,11 @@ export default async function Dash() {
             </p>
 
             <br />
-            {/* <p className="  text-slate-600">Shambhavi Rai</p> */}
+            <p className="  text-slate-600">Shambhavi Rai</p>
           </div>
         </div>
 
-        <div className=" container">
+        <div className=" container mb-5">
           <Books/>
         </div>
       </nav>

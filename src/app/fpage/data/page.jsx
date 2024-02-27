@@ -5,22 +5,24 @@ import axios from 'axios';
 
 function Cardss(book, index) {
   return (
-    <div className="cards justify-around  grid-cols-2flex" key={index}>
-      <div className=' '>
-      <div className="card  mt-10 rounded-sm h-auto w-auto text-center p-5 border-4 justify-center aspect-video">
+    <div className="cards flex mb-5 align-top m-5 rounded-2xl  h-auto" key={index}>
+   
+      <div className="card  mt-10 rounded-xl shadow-2xl  text-center p-5  justify-center aspect-video shadow-black bg-slate-50  bg-opacity-30">
       <div className=' flex justify-center align-middle '>
       <img className='justify-center align-middle ' src={`https://covers.openlibrary.org/b/id/${book.cover_id}-M.jpg`} alt={`${book.title} cover`} />
       </div>
         
-        <div className=' justify-center p-5 '>
+        <div className=' justify-center p-5'>
         <p className='font-semibold '>{book.title}</p>
         <p>{book.first_publish_year}</p>
       </div>
+
+      <br/>
         </div>
       </div>
 
       
-    </div>
+   
   );
 }
 
@@ -45,7 +47,7 @@ const Books = () => {
 
   return (
     <div>
-      <div className=' ml-64 mr-60 rounded-xl p-5 text-wrap text border-4 flex-row'>
+      <div className=' rounded-3xl p-5 text-wrap  border-4 columns-3   ml-10 mr-10 mt-4'>
         {error && <p>{error}</p>}
         <div className="book-covers">
           {books.map(Cardss)}
