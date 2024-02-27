@@ -61,6 +61,8 @@ export default function Search() {
                             <strong>Already Read Count</strong> {result.already_read_count? result.already_read_count : "N/A"}
                         </div>
                         <div class="border-b border-solid border-black "></div>
+
+                    <br/>
                     </div>
                 )}
             </ul>
