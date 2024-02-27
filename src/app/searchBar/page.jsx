@@ -30,14 +30,14 @@ export default function Search() {
                 placeholder="Find book details...."
                 className=" border-4 h-14 p-2 w-1/3 border-slate-950 rounded-lg text-black"
             />
-            <button type='submit' className=" flex flex-col text-black " onClick={handleSearch}><FaSearch className=" mt-5 ml-1 size-5 hover:bg-white hover:rounded-lg " /></button>
+            <button type='submit' className=" flex flex-col text-black " onClick={handleSearch}><FaSearch className=" mt-5 ml-1 size-5 hover:bg-white  hover:rounded-lg " /></button>
            
             </div>
            
 
            <div className=" flex justify-center mr-6 ">
              
-           <ul className=" bg-slate-100 h-60 w-96 overflow-auto border-3 border-slate-800 rounded-md mt-3" >
+           <ul className=" bg-white shadow-md bg-opacity-25 shadow-black h-60 w-96 overflow-auto border-3 border-slate-800 rounded-md mt-3" >
                 {results.map((result, index) =>
                     <div key={index}>
                     
